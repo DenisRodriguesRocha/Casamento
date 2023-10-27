@@ -22,7 +22,13 @@ a:hover {
   font-size: 20px;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+}
+.logoe{
+  font-size: 20px;
+  
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 nav {
@@ -35,10 +41,10 @@ nav {
 }
 
 header {
-  background: url(capa.jpg)no-repeat center center;
+  background: url(/images/capa.jpg)no-repeat center;
   background-size: cover;
   filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
-  height: 92vh;
+  height: 100vh;
 }
 
 .nav-list {
@@ -105,6 +111,10 @@ header {
   font-size: 25px;
   font-family: 'Dancing Script', cursive;
 }
+.e{
+  color: #fdfcfc;
+  font-size: 25px;
+}
 
 /*CORPO*/
 p {
@@ -156,7 +166,6 @@ p {
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
 }
-
 
 .corpo img {
   width: auto;
