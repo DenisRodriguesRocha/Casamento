@@ -41,11 +41,12 @@ nav {
 }
 
 header {
-  background: url(/capa.jpg)no-repeat center;
+  background: url(/novacapa.JPG) no-repeat center center;
   background-size: cover;
   filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
   height: 100vh;
 }
+
 
 .nav-list {
   list-style: none;
@@ -143,6 +144,11 @@ p {
   font-family: 'Dancing Script', cursive;
 }
 
+.corpo .p3 {
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+
 .corpo .p6 {
   font-size: 50px;
   font-family: 'Dancing Script', cursive;
@@ -194,12 +200,87 @@ p {
   background-color: #ffffff;
   color: #4f7243;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 20px auto;
   width: 300px;
   filter: drop-shadow(0 0 0.75rem rgba(179, 175, 176, 0.914));
 }
 
+/*SLIDER*/
+.slideshow-container {
+    
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.slideshow {
+  display: none;
+}
+.slideshow img { width:60%; }
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 4px;
+  border-radius: 50px;
+  background-color: #fefeff;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.ativo,
+.dot:hover {
+  background-color: #242424;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em){
+  .paginacao { margin:20px 0; }
+  .dot       { width:18px; height:18px; }
+}
 
 /*RESPONSIVO*/
 @media (max-width: 999px) {
