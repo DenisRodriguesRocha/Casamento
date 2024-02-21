@@ -107,6 +107,15 @@ header {
   font-family: 'Dancing Script', cursive;
 }
 
+.pDataCasamento{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px;
+}
+
+
 .nomeCasal {
   color: #fdfcfc;
   font-size: 25px;
